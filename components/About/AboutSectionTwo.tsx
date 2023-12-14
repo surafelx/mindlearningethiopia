@@ -31,7 +31,7 @@ const AboutSectionTwo = () => {
                   Mobile Accessibility
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Learn on the go with our LMS's mobile accessibility. Whether on a smartphone or tablet, access educational resources whenever and wherever it suits your schedule.
+                  Learn on the go with our LMS mobile accessibility. Whether on a smartphone or tablet, access educational resources whenever and wherever it suits your schedule.
                 </p>
               </div>
               <div className="mb-9">
@@ -48,9 +48,8 @@ const AboutSectionTwo = () => {
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
 
-                  Integrated Assessments for Mastery:
-
-                  Experience a holistic learning approach with Mind's Learning Management System, featuring integrated assessments.
+                  Integrated Assessments for Mastery
+                  Experience a holistic learning approach with Mind Learning Management System, featuring integrated assessments.
                 </p>
               </div>
             </div>

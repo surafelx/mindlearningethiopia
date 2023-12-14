@@ -1,13 +1,11 @@
 "use client"
 import React, { useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { initParticlesEngine } from "@tsparticles/react";
 import type { Container } from "@tsparticles/engine";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim";
-
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import Image from 'next/image'
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 const delay = 2500;
@@ -36,7 +34,7 @@ const Course = ({ imageUrl, courseTitle, price }) => {
 
     <div className="inline-block w-full bg-white border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img className="p-8 rounded-t-lg items-center flex justify-center mx-auto h-[400px]" src={imageUrl} alt="product image" />
+        <Image width={400} height={400} className="p-8 rounded-t-lg items-center flex justify-center mx-auto h-[400px]" src={imageUrl} alt="product image" />
       </a>
       <div className="px-5 pb-5">
         <a href="#">
@@ -237,7 +235,7 @@ const Hero = () => {
                         value={phone}
                         onChange={(phone) => setPhone(phone)}
                       />
-                      <div style={{position: "relative", height: "70px"}}>
+                      <div style={{ position: "relative", height: "70px" }}>
                         <button
                           style={{ background: "#2BAFFC", height: "48px", width: "132px", verticalAlign: "middle" }}
                           className="absolute top-3 right-4 my-auto ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-3 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-3 lg:px-3 xl:px-3"
@@ -256,8 +254,8 @@ const Hero = () => {
                       className="slideshowSlider pb-7"
                       style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
                     >
-                      {courses.map(({ imageUrl, courseTitle, price }) => (
-                        <Course courseTitle={courseTitle} price={price} imageUrl={imageUrl} />
+                      {courses.map(({ imageUrl, courseTitle, price }, index) => (
+                        <Course key={index} courseTitle={courseTitle} price={price} imageUrl={imageUrl} />
                       ))}
                     </div>
 
@@ -278,7 +276,6 @@ const Hero = () => {
             </div >
           </div >
         </div >
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </section >
 
     </>

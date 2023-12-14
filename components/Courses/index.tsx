@@ -1,4 +1,5 @@
 import SectionTitle from "../Common/SectionTitle";
+import Image from 'next/image'
 
 const Courses = () => {
     return (
@@ -18,7 +19,7 @@ const Courses = () => {
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
-                                <img className="p-8 rounded-t-lg mx-auto h-96" src="images/hero/course-2.svg" alt="product image" />
+                                <Image width={300} height={300} className="p-8 rounded-t-lg mx-auto h-96" src="images/hero/course-2.svg" alt="product image" />
                             </a>
                             <div className="px-5 pb-5">
                                 <a href="#">
@@ -45,17 +46,17 @@ const Courses = () => {
                                     </div>
                                     <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                                 </div>
-                                <div 
-                              
-                                className="flex items-center justify-between">
+                                <div
+
+                                    className="flex items-center justify-between">
                                     <span className="text-3xl font-bold text-gray-900 dark:text-white">$50</span>
-                                    <a href="#"   style={{ background: "#2BAFFC" }}  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-3 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-3 lg:px-6 xl:px-9">Enroll</a>
+                                    <a href="#" style={{ background: "#2BAFFC" }} className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-3 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-3 lg:px-6 xl:px-9">Enroll</a>
                                 </div>
                             </div>
                         </div>
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
-                                <img className="p-8 rounded-t-lg mx-auto h-96" src="images/hero/course-3.svg" alt="product image" />
+                                <Image width={300} height={300} className="p-8 rounded-t-lg mx-auto h-96" src="images/hero/course-3.svg" alt="product image" />
                             </a>
                             <div className="px-5 pb-5">
                                 <a href="#">
@@ -83,14 +84,14 @@ const Courses = () => {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <span className="text-3xl font-bold text-gray-900 dark:text-white">$50</span>
-                                    <a href="#"   style={{ background: "#2BAFFC" }}  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-3 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-3 lg:px-6 xl:px-9">Enroll</a>
+                                    <a href="#" style={{ background: "#2BAFFC" }} className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-3 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-3 lg:px-6 xl:px-9">Enroll</a>
                                 </div>
                             </div>
                         </div>
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
-                                <img className="p-8 rounded-t-lg mx-auto h-96" src="images/hero/course-4.svg" alt="product image" />
+                                <Image width={300} height={300} className="p-8 rounded-t-lg mx-auto h-96" src="images/hero/course-4.svg" alt="product image" />
                             </a>
                             <div className="px-5 pb-5">
                                 <a href="#">
@@ -118,7 +119,7 @@ const Courses = () => {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <span className="text-3xl font-bold text-gray-900 dark:text-white">$50</span>
-                                    <a href="#"   style={{ background: "#2BAFFC" }}  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-3 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-3 lg:px-6 xl:px-9">Enroll</a>
+                                    <a href="#" style={{ background: "#2BAFFC" }} className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-3 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-3 lg:px-6 xl:px-9">Enroll</a>
                                 </div>
                             </div>
                         </div>
